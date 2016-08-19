@@ -43,7 +43,18 @@ class ViewController: UIViewController {
 //                    group.users.insert(ref.key)
 //                })
 //            }
-//            
+//
+//            do {
+//                let user: User = User()
+//                user.name = "John Smith"
+//                user.gender = "man"
+//                user.age = 36
+//                user.items = ["Rip", "Shoes"]
+//                user.groups.insert(ref.key)
+//                user.save({ (error, ref) in
+//                    group.users.insert(ref.key)
+//                })
+//            }         
 //        }
 
         User.observeSingle(FIRDataEventType.Value) { (results) in
